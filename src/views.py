@@ -1,0 +1,1 @@
+# "Plansze" w grze

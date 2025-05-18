@@ -1,0 +1,6 @@
+# W tym pliku wypisz wszystkie biblioteki, które należy doinstalować aby program działał
+# Instrukcja:
+# https://www.freecodecamp.org/news/python-requirementstxt-explained/
+
+# Wtedy będzie można je szybko zainstalować na każdym urządzeniu za pomocą komendy
+# `pip install -r requirements.txt`
