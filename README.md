@@ -1,16 +1,16 @@
-# -- Tytuł gry --
+# Wrocław City Girl
 
-## Autor
+## Szymon Goździkowski
 
--- autor -- 
+Student pierwszego roku matematyku stosowanej na PWr - gra zrobiona w ramach projektu na zaliczenie z Programowania
 
 ## Opis
 
--- Krótki opis twojej gry --
+Prosta, stylizowana na "arkadową", gierka, gdzie biegniesz przed siebie i unikasz szczurów, łapiąc przy tym punkty
 
 ### -- Szczegóły --
 
--- tu możesz dodać szczegóły, np. zasady gry--
+Co 10 sekund tempo przyspiesza (i dużo więcej zasad na pewno proszę zaufać)
 
 
 ## Technologie
@@ -18,7 +18,7 @@
 -- Tutaj opisz użyte technologie --
 
 - **Python**: ...
-- **Pygame**: ...
+- **Arcade**: ...
 - **I cokolwiek innego**: ...
 
 ## Uruchomienie
@@ -39,5 +39,5 @@
 
 3. Uruchom grę
     ```
-    python app.py
+    python main.py
     ```
