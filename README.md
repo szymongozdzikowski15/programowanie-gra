@@ -2,34 +2,38 @@
 
 ## Szymon Goździkowski
 
-Student pierwszego roku matematyku stosowanej na PWr - gra zrobiona w ramach projektu na zaliczenie z Programowania
+Student pierwszego roku matematyki stosowanej na PWr
+Gra zrobiona w ramach projektu zaliczeniowego z kursu *Programowanie*
 
 ## Opis
 
-Prosta, stylizowana na "arkadową", gierka, gdzie biegniesz przed siebie i unikasz szczurów, łapiąc przy tym punkty
+Prosta, stylizowana na arkadową, gierka, gdzie gracz biegnie przez Wrocław. Należy unikać przeszkód (szczurów) i zdobywać punkty za łapanie bonusów. Z czasem tempo gry rośnie, co zwiększa poziom trudności
 
-### -- Szczegóły --
+### Szczegóły gierki
 
-Co 10 sekund tempo przyspiesza (i dużo więcej zasad na pewno proszę zaufać)
+- Gra przyspiesza co **15 sekund**
+- Gracz traci życie po zderzeniu z przeszkodą
+- Gra kończy się, gdy liczba żyć spadnie do zera
+- Wynik jest zapisywany, jeśli gracz osiągnie **top 10**
+
+(pełna logika rozgrywki zaszyta jest w plikach kodu – polecam zajrzeć ;))
 
 
 ## Technologie
 
--- Tutaj opisz użyte technologie --
-
-- **Python**: ...
-- **Arcade**: ...
-- **I cokolwiek innego**: ...
+- **Python 3.11+**
+- **[Arcade 3.3.0](https://api.arcade.academy/en/3.3.0/)** 
+- **pillow** – do wczytywania tekstur
+- **random, os, json, dataclasses** – standardowe biblioteki Pythona
+- Gra działa w pełni lokalnie, bez potrzeby dostępu do internetu
 
 ## Uruchomienie
 
--- Instrukcja uruchomienia gry. Może ona wyglądać w sposób podobny jak poniżej --
-
 1. Sklonuj repozytorium:
    
-    ```sh
-    git clone <adres repozytorium>
-    cd <nazwa repozytorium>
+    ```bash
+   git clone https://github.com/szymongozdzikowski15/programowanie-gra.git
+   cd programowanie-gra
     ```
 
 2. Zainstaluj dependencje
@@ -39,5 +43,7 @@ Co 10 sekund tempo przyspiesza (i dużo więcej zasad na pewno proszę zaufać)
 
 3. Uruchom grę
     ```
-    python main.py
+    python src/main.py
     ```
+
+Miłego grania!!!
