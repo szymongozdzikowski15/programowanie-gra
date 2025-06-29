@@ -91,8 +91,8 @@ class ConfigurationView(BaseView):
         )
 
         # Button colors depend on selected difficulty
-        easy_color = arcade.color.DARK_SPRING_GREEN if settings.difficulty == "Łatwy" else arcade.color.DARK_GREEN
-        hard_color = arcade.color.LIGHT_CORAL if settings.difficulty == "Trudny" else arcade.color.DARK_RED
+        easy_color = arcade.color.FOREST_GREEN if settings.difficulty == "Łatwy" else arcade.color.DARK_GREEN
+        hard_color = arcade.color.FIREBRICK if settings.difficulty == "Trudny" else arcade.color.BLACK_BEAN
 
         # Draw difficulty buttons
         arcade.draw_lrbt_rectangle_filled(*self.easy_button, easy_color)
@@ -114,7 +114,7 @@ class ConfigurationView(BaseView):
         # Description text lines explaining the "Trudny" difficulty
         description_lines = [
             "Poziom trudny sprawia, że przedmioty poruszają się",
-            "szybciej, jest je więc trudniej złapać oraz generuje",
+            "szybciej, jest je więc trudniej ominąć oraz generuje",
             "się więcej przeszkód niż na poziomie łatwym."
         ]
 

@@ -40,7 +40,7 @@ class AboutView(arcade.View):
             right=self.window.width - 50,
             top=self.window.height - 50,
             bottom=50,
-            color=(20, 20, 30, 90)
+            color=(20, 20, 30, 110)
         )
 
         x = self.window.width // 2

@@ -4,6 +4,13 @@ from settings import SCREEN_HEIGHT, SCREEN_WIDTH
 
 
 class MainMenuView(arcade.View):
+    """
+    View displaying the main menu of the game
+
+    Allows navigation to other views such as starting the game,
+    reading the rules, adjusting difficulty, checking high scores,
+    reading about the author, or exiting the game
+    """
     def __init__(self):
         """Initialize main menu view with buttons and background."""
         super().__init__()
@@ -21,8 +28,7 @@ class MainMenuView(arcade.View):
         self.background_texture = arcade.load_texture(background_path)
 
     def on_show(self):
-        """Called when the view is shown; music loading and playback removed."""
-        pass
+        """Play menu music when the main menu is shown."""
 
     def on_hide(self):
         """Called when the view is hidden; music stop removed."""
@@ -99,7 +105,6 @@ class MainMenuView(arcade.View):
             return
 
         option = self.buttons[self.hovered_button_index][0]
-        print(f"Clicked: {option}")
 
         if option == "Start gry":
             from views.game import GameView
